@@ -14,7 +14,6 @@ programa {
     leia(n3)
     escreva("\n")
 
-
     //Processamento
     total= n1 + n2 + n3
     media= total / 3
