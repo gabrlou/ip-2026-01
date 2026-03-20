@@ -1,5 +1,4 @@
 programa {
-  inclua biblioteca Matematica --> mat
   funcao inicio() {
 
   inteiro n1, n2, contador
