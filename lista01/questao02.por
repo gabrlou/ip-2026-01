@@ -21,7 +21,6 @@ programa {
     real lista_renda[quant_jogos]
     inteiro i
 
-
     para(i=0; i < quant_jogos; i++)
     {
 
