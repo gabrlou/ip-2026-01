@@ -11,7 +11,7 @@ func main() {
    f.Scan(&n3)
    
    result := maior(n1,n2,n3)
-   f.Printf("\nO maior número entre os números %d, %d e %d é: %d\n", n1, n2, n3, result)
+   f.Printf("\nO maior número entre %d, %d e %d é: %d\n", n1, n2, n3, result)
 }
 
 func maior(numero1, numero2, numero3 int) int {
