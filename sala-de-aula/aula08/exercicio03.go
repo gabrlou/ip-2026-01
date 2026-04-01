@@ -14,7 +14,7 @@ func main() {
    f.Printf("\nA média entre os números %d, %d e %d é: %.2f\n", n1, n2, n3, result)
 }
 
-func MEDIA(numero1, numero2, numero3 int) float64 {
-	media := float64(numero1 + numero2 + numero3) / 3
+func MEDIA(X, Y, Z int) float64 {
+	media := float64(X + Y + Z) / 3
 	return media
 }
