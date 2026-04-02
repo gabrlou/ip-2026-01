@@ -11,8 +11,11 @@ func main() {
 }
 
 func Fatorial(numero int) int {
-	if numero == 1 {
-		return numero
+	valor_base := numero
+	calculo := numero
+	for i := numero; i > 1; i-- {
+		calculo *= (valor_base - 1)
+		valor_base -= 1
 	}
-	return numero * Fatorial(numero - 1)
+	return calculo
 }
