@@ -30,7 +30,8 @@ func main() {
 	penultimo := i1
 	ultimo := i2
 	proximo := 0
-	f.Printf("%d - %d", penultimo, ultimo)
+
+	f.Printf("\n%d %d", penultimo, ultimo)
 
 	for i := 2; i < N; i++ {
 
@@ -42,7 +43,7 @@ func main() {
 
 		penultimo = ultimo
 		ultimo = proximo
-		f.Printf(" - %d", proximo)
+		f.Printf(" %d", proximo)
 	}
 	f.Print("\n\n")
 }
