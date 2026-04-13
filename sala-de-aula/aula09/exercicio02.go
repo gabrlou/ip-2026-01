@@ -23,11 +23,15 @@ func main() {
 }
 
 func BuscaBinaria(l[]int, x int) int {
+
 	n := len(l)
 	pos_ini := 0
 	pos_fim := n - 1
+
 	for pos_ini <= pos_fim {
+
 		pos_meio := (pos_ini + pos_fim) / 2
+
 		if l[pos_meio] == x {
 			return pos_meio
 		} else if l[pos_meio] < x {
