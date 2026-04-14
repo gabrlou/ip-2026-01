@@ -12,7 +12,7 @@ func main() {
 	f.Print("\nDigite o primeiro termo da série de Fetuccine: ")
 	f.Scan(&i1)
 
-	f.Print("\nDigite o segundo termo da série de Fetuccine: ")
+	f.Print("Digite o segundo termo da série de Fetuccine: ")
 	f.Scan(&i2)
 
 	for {
@@ -31,11 +31,11 @@ func main() {
 	ultimo := i2
 	proximo := 0
 
-	f.Printf("\n%d %d", penultimo, ultimo)
+	f.Printf("\n%d | %d", penultimo, ultimo)
 
 	for i := 2; i < N; i++ {
 
-		if i1 % 2 == 0 || i2 % 2 == 0 {
+		if penultimo%2 == 0 && ultimo%2 == 0 {
 			proximo = ultimo - penultimo
 		} else {
 			proximo = ultimo + penultimo
@@ -43,7 +43,7 @@ func main() {
 
 		penultimo = ultimo
 		ultimo = proximo
-		f.Printf(" %d", proximo)
+		f.Printf(" | %d", proximo)
 	}
 	f.Print("\n\n")
 }
