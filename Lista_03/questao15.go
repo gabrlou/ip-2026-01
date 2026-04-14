@@ -2,9 +2,7 @@ package main
 import f "fmt"
 
 func main() {
-	var(
-		N int
-	)
+	var N int
 
 	for {
 		f.Print("\nDigite a quantidade N de termos da série [1 4 9 16 25 36 ...] a serem exibidos: ")
