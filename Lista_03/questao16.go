@@ -1,8 +1,6 @@
 package main
 
-import (
-	f "fmt"
-)
+import f "fmt"
 
 func main() {
 	var (

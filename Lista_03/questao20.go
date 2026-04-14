@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	f "fmt"
-)
+import f "fmt"
 
 func main() {
 
