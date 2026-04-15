@@ -8,11 +8,11 @@ func main() {
 	for i := 0; i < 10; i++ { // Linhas: "i"
 		for j := 0; j < 10; j++ { // Colunas: "j"
 			if i > j {
-				fmt.Printf("(%d, %d) ", i, j)
+				f.Printf("(%d, %d) ", i, j)
 				continue
 			}
 		}
-		fmt.Println()
+		f.Println()
 	}
 	f.Print("\n")
 }
