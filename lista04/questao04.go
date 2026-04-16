@@ -1,22 +1,19 @@
 package main
 
-import (
-	"fmt"
-	f "fmt"
-)
+import f "fmt"
 
 func main() {
 
 	var numero int
-	fmt.Print("\nDigite um número: ")
-	fmt.Scan(&numero)
+	f.Print("\nDigite um número: ")
+	f.Scan(&numero)
 
 	if numero == 0 {
-		fmt.Println("Número em binário: 0")
+		f.Println("Número em binário: 0")
 		return
 	}
 
-	fmt.Print("Número em binário: ")
+	f.Print("Número em binário: ")
 	converter_binario(numero)
 	f.Print("\n\n")
 }
@@ -28,5 +25,5 @@ func converter_binario(numero int) {
 
 	converter_binario(numero / 2)
 
-	fmt.Print(numero % 2)
+	f.Print(numero % 2)
 }
