@@ -4,27 +4,28 @@ import f "fmt"
 
 func main() {
 
-	f.Print("\nSoma de 10 números digitados pelo usuário.")
-	
-	var Array [10]float64
-	for i := 0; i < len(Array); i++ {
+	f.Print("\nSoma de 10 números digitados pelo usuário.\n")
 
-		termo := 0.0
-		f.Print("\nDigite o %d número a ser somado:", i+1)
+	var Array [10]float64
+
+	for i := 0; i < len(Array); i++ {
+		f.Printf("Digite o %dº número a ser somado: ", i+1)
+
+		var termo float64
 		f.Scan(&termo)
 
-		Array [i] = termo
+		Array[i] = termo
 	}
 
-	f.Printf("Array: %v", Array)
+	f.Printf("\nArray: %v\n", Array)
 
-	resultado := soma(Array)
-	f.Printf("\nA soma da Array é: %.2f\n\n", resultado)
+	resultado := soma(Array[:])
+	f.Printf("A soma do Array é: %.2f\n", resultado)
 }
 
-func soma (array[] float64) float64 {
-		if len(array) == 0 {
-			return 0
-		}
-		return array[0] + soma(array[1:])
+func soma(array []float64) float64 {
+	if len(array) == 0 {
+		return 0
 	}
+	return array[0] + soma(array[1:])
+}
