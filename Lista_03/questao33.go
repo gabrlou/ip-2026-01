@@ -5,11 +5,29 @@ import f "fmt"
 func main() {
 	var n1, n2 int
 
-	f.Print("\nDigite o valor de N1: ")
-	f.Scan(&n1)
+	for {
+		f.Print("\nDigite o valor de N1: ")
+		f.Scan(&n1)
 
-	f.Print("Digite o valor de N2: ")
-	f.Scan(&n2)
+		if n1 <= 0 {
+			f.Println("Número inválido. Digite um número maior que zero.")
+			continue
+		} else {
+			break
+		}
+	}
+
+	for {
+		f.Print("Digite o valor de N2: ")
+		f.Scan(&n2)
+
+		if n2 <= 0 {
+			f.Println("Número inválido. Digite um número maior que zero.")
+			continue
+		} else {
+			break
+		}
+	}
 
 	resto := n1
 	quociente := 0
