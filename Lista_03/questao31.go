@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import f "fmt"
 
 func main() {
 	var graos, total uint64
@@ -13,5 +13,5 @@ func main() {
 		graos *= 2
 	}
 
-	fmt.Printf("\nTotal de grãos no tabuleiro: %d\n\n", total)
+	f.Printf("\nTotal de grãos no tabuleiro: %d\n\n", total)
 }
