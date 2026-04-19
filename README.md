@@ -44,7 +44,7 @@ ip-2026-01
 │
 ├── README.md
 │
-├── lista_01/
+├── lista01/
 │   ├── questao01.por
 │   ├── questao02.por
 │   └── questao03.por
@@ -56,8 +56,8 @@ ip-2026-01
 │   └── questao03.go
 │   ...
 │
-├── lista_02/
-├── lista_03/
+├── lista02/
+├── lista03/
 │   ...
 │
 ├── sala-de-aula/
