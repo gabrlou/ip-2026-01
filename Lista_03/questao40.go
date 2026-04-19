@@ -26,14 +26,12 @@ func main() {
 
 		f.Printf("R$ %.2f\t\t%d\t\tR$ %.2f\n", preco, ingressos, lucro)
 
-		// Verifica lucro máximo
 		if lucro > lucro_max || preco == 6.0 {
 			lucro_max = lucro
 			melhor_preco = preco
 			melhor_quant = ingressos
 		}
 
-		// Atualiza valores
 		preco -= 0.60
 		ingressos += 30
 	}
