@@ -120,7 +120,7 @@ Este repositório tem como finalidade:
 
 ## 📌 Autor
 
-Gabriel H. Lourenço Dias 
-Disciplina Curricular: Introdução à Programação (2026/01) 
-Curso: Engenharia de Software - Universidade Federal de Goiás
+- Gabriel H. Lourenço Dias 
+- Disciplina Curricular: Introdução à Programação
+- Curso: Engenharia de Software - UFG
 
