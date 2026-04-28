@@ -6,3 +6,5 @@ func main() {
 	var teste
 	f.Print("teste")
 }
+
+
