@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas Agendadas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/visualizarConsultas.style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="header-container">
+            <h2>Consultas Agendadas</h2>
+            <p>Lista completa de todos os agendamentos registrados no sistema</p>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código/ID</th>
+                        <th>Paciente</th>
+                        <th>Médico</th>
+                        <th>Especialidade</th>
+                        <th>Data</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{range .}}
+                    <tr>
+                        <td>#{{.ID}}</td>
+                        <td>{{.NomePaciente}}</td>
+                        <td>{{.NomeMedico}}</td>
+                        <td>{{.Especialidade}}</td>
+                        <td>{{.DataConsulta}}</td>
+                        <td>{{.HorarioConsulta}}</td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <td colspan="6" class="no-records">Nenhum agendamento de consulta encontrado.</td>
+                    </tr>
+                    {{end}}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="actions-container">
+            <a href="/index.html" class="back-link">
+                <span>← Voltar ao Início</span>
+            </a>
+
+            <a href="/forms/agendarConsulta.html" class="btn-add">
+                <span>Novo Agendamento</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

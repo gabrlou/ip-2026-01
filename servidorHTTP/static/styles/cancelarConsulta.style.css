@@ -1,0 +1,126 @@
+:root {
+    --blue-inf: #0072b9;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--blue-inf);
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.header-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+    max-width: 360px;
+}
+
+.header-container h2 {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.header-container p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+}
+
+form {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    max-width: 360px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+form label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+form input {
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px 10px;
+    border: solid 1px var(--blue-inf);
+    font-size: 0.95rem;
+    outline: none;
+    background-color: white;
+    color: #333;
+    transition: all .3s ease-in-out;
+}
+
+form input:focus {
+    outline: none;
+    transform: scale(1.03);
+}
+
+form button[type="submit"] {
+    border: solid 1px var(--blue-inf);
+    background-color: var(--blue-inf);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #ff3c00;
+    border-color: #ff3c00;
+}
+
+.back-link {
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}

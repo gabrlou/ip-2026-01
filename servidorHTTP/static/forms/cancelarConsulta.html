@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelar Consulta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/cancelarConsulta.style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="header-container">
+            <h2>Cancelar Consulta</h2>
+            <p>Informe os dados abaixo para cancelar seu agendamento</p>
+        </div>
+
+        <form method="POST" action="/cancelarConsulta">
+            <div>
+                <label for="id">Código/ID da Consulta:</label>
+                <input id="id" name="id" placeholder="Digite o ID da consulta" type="number" required>
+            </div>
+
+            <div>
+                <label for="nomePaciente">Nome do Paciente:</label>
+                <input id="nomePaciente" name="nomePaciente" placeholder="Digite o nome cadastrado" type="text"
+                    required>
+            </div>
+
+            <button type="submit"><span>Confirmar Cancelamento</span></button>
+        </form>
+
+        <a href="/index.html" class="back-link">
+            <span>← Voltar ao Início</span>
+        </a>
+    </div>
+</body>
+
+</html>
